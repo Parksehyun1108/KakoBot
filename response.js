@@ -1,8 +1,6 @@
 var Data;
-
 function response(room, msg, sender, isGroupChat, replier, imageDB){
 	var msg = msg.split(" ");
-	
 	if(msg[0] == "/배그"){
   if(msg[1] == null){
    replier.reply("사용법: /배그 <닉네임>");
@@ -20,7 +18,6 @@ function response(room, msg, sender, isGroupChat, replier, imageDB){
   }
  }
 }
-
 function checkRating(){
  var temp_sub = Data.substr(Data.indexOf("최근 업데이트"),50);
  var temp_sub1 = temp_sub.split("<span>");
